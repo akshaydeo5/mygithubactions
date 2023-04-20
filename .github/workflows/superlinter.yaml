@@ -1,23 +1,6 @@
 name: Super-Linter
 
-# on: push
-on:
-  workflow_call: 
-    inputs:
-      Source_code:
-        description: 'Full path to the project repo'
-        required: true
-        default: 'dummy.cpp'
-        type: string
-      job_id:
-        description: 'id'
-        required: true
-        default: '1234'
-        type: string
-      runner_details:
-        description: ' workflow runner'
-        required: true
-        type: string
+on: push
 
 jobs:
   super-lint:
